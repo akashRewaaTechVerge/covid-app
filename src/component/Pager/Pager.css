@@ -1,0 +1,140 @@
+.pager-section {
+	padding: 250px 0 0;
+	background-image: url(../../images/pager-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 50px;
+}
+.pager-info {
+	max-width: 520px;
+	float: left;
+}
+.breadcrumb {
+	background-color: inherit;
+	padding: 0;
+	margin-bottom: 20px;
+	margin-top: -9px;
+}
+.breadcrumb li {
+	display: inline-block;
+	position: relative;
+	padding: 0 30px;
+}
+.breadcrumb li:before {
+	content: '/';
+	position: absolute;
+	top: 0;
+	left: 100%;
+	color: #7a7d86;
+	font-size: 16px;
+	font-weight: 500;
+}
+.breadcrumb li:first-child {
+	padding-left: 0;
+}
+.breadcrumb li:last-child:before {
+	display: none;
+}
+.breadcrumb li a,
+.breadcrumb li span {
+	display: inline-block;
+	color: #787a84;
+	font-size: 16px;
+	font-weight: 500;
+}
+.breadcrumb li span {
+	color: #070c1f;
+}
+.pager-info > h2,
+.pg-title-head > h2 {
+	color: #070c1f;
+	font-size: 82px;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+.pg-title-head > h2 {
+	margin-bottom: 21px;
+}
+.pager-info > span,
+.pg-title-head > span {
+	display: block;
+	color: #070c1f;
+	font-size: 26px;
+	max-width: 394px;
+	font-weight: 500;
+}
+.no-bg {
+	background:inherit !important;
+}
+.no-seduo:before {
+	display: none;
+}
+.w-auto {
+	width: auto !important;
+}
+.pager-section.style2 .pager-info {
+	max-width: 645px;
+}
+.pger-imgs {
+	float: right;
+	width: calc(100% - 520px);
+	position: relative;
+	z-index: 9;
+	margin-bottom: -205px;
+    
+}
+.pger-imgs .abt-imgz {
+	position: relative;
+}
+.sncd-img {
+	position: absolute;
+	top: 240px;
+	right: 0;
+	padding-right: 13px;
+}
+.pger-imgs .abt-imgz img {
+	width: auto;
+	max-width: inherit;
+	margin-right: 0;
+}
+.pger-imgs:before {
+	content: '';
+	position: relative;
+	bottom: -240px;
+	right: 0;
+	width: 284px;
+	height: 319px;
+}
+.pger-imgs .abt-txt {
+	left: 70px;
+	right: auto;
+	transform: inherit;
+	bottom: -116px;
+}
+
+.pager-section.style2 {
+ background-color: transparent;	
+}
+.pager-section.style2 .pg-title-head > h2 {
+	font-size: 66px;
+	line-height: 78px;
+	padding-right: 30px;
+	position: relative;
+}
+.pg-title-head {
+	position: relative;
+	padding-bottom: 63px;
+}
+.pg-title-head:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	height: 2px;
+	background-color: #86b5b3;
+}
+.pager-section.style2 .pger-imgs {
+	margin-bottom: 0;
+	margin-top: 30px;
+}

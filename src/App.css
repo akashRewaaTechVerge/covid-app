@@ -1,0 +1,198 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+nav ul li a:hover, .contact-head-info>a, .banner-content>h2 span, .lnk-default, .lnk-default2, .lnk-default2:hover, .p-num, .rating li, .blog-title a:hover, .contact-head-info>a:hover, nav ul li a.active, .award-col>h2, .wid-post-info>h3:hover, .wid-post-info>h3:hover a, .arch-list li a:hover, .tags_list li a:hover, .pagination-mint .page-link:hover, input#amount, .view-details:hover, .shop-info>h3:hover a, .add-cart, .cart-btn-circle, .catg-controls li a:hover, .social-links.without-bg li a, .option-set li a.selected {
+  color: #0d6b68;
+}
+
+
+
+/* CROSS BROWSER COMPATABILITY */
+
+.lnk-default:before,
+.team:before,
+.figcaption,
+.slick-prev,
+.slick-next,
+.slick-prev:before,
+.slick-next:before,
+.contact-head-info>a:before,
+.lnk-default2:before,
+.responsive-mobile-menu,
+a,
+nav ul ul,
+.project-item>img,
+.post-thumbnail>img,
+.wid-post-thumb:before,
+.add-to-cart i,
+.header-search,
+.search-close-btn,
+header.sticky .header-content {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.cart-number,
+.lnk-default span,
+.play-btn,
+.proz-mint:after,
+.testi-head>img,
+.slick-dots li button,
+.ui-slider-horizontal .ui-slider-handle,
+.add-to-cart,
+.slider.round:before,
+.cart-btn-circle,
+.form-submit,
+.form-submit button {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.lnk-default:before, .team:before, .figcaption, .slick-prev, .slick-next, .slick-prev:before, .slick-next:before, .contact-head-info>a:before, .lnk-default2:before, .responsive-mobile-menu, a, nav ul ul, .project-item>img, .post-thumbnail>img, .wid-post-thumb:before, .add-to-cart i, .header-search, .search-close-btn, header.sticky .header-content {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+  display: inline-block;
+}
+
+/* IMPORTING GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap');
+
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+  overflow-x: hidden;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+input:focus {
+  background-color: inherit;
+}
+
+textarea {
+  outline: none;
+}
+
+section {
+  display: block;
+  position: relative;
+}
+
+p {}
+
+a {
+  color: inherit;
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+  display: inline-block;
+}
