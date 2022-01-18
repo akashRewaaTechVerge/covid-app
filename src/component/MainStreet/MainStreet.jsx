@@ -1,53 +1,56 @@
 import React from 'react'
-import Pager from '../Pager/Pager'
-import './ContactUs.css'
-import contactImg from '../../images/contactus.png'
-import map from '../../images/ci1.png'
-import time from '../../images/ci2.png'
-import mail from '../../images/ci3.png'
-import call from '../../images/ci4.png'
+
+import contactImg from '../../images/corona.png'
 import submit from '../../images/submit.png'
-import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa'
-const ContactUs = () => {
+import { FaClock, FaFacebookF, FaInstagram, FaLocationArrow, FaWhatsapp } from 'react-icons/fa'
+import { HiMail} from 'react-icons/hi'
+import {IoMdCall} from 'react-icons/io'
+import Pager from '../Pager/Pager'
+import './MainStreet.css'
+const MainStreet = () => {
     return (
         <div>
-            <Pager pageTitle="Contact" bigTitle="Contact" imgBanner={contactImg} left={'25%'} />
+            <Pager pageTitle="MainStreet" bigTitle="Get Tested Safely For Free Today" isRed={true} imgBanner={contactImg}  height="600px" left="20%" />
             <section className="page-content">
                 <div className="container">
                     <div className="contact-page">
-                        <div className="contact-head">
-                            <p>Any questions or suggestions? <br /> Write us a message and we will contact you!</p>
+                        <div className="contact-head-mainStreet">
+                            <div className='main-title'>Are you looking to ensure the health and safely of  <br /> you and everyone around you?</div>
+                            <p>Get Tested Safely For Free Today</p>
                         </div>
                         {/* <!--contact-head end--> */}
                         <div className="contact-main">
                             <div className="row">
                                 <div className="col-lg-4">
-                                    <div className="contact_info">
-                                        <h3 className="sub-title white">Contacts</h3>
-                                        <ul className="cl-list">
+                                    <div className="main_street-contact_info">
+                                        <h3 className="main-street-sub-title white">Contacts</h3>
+                                        <ul className="main-street-cl-list">
                                             <li>
-                                                <span className="ci-icon">
-                                                    <img src={map} alt="" />
+                                                <span className="main-street-ci-icon">
+                                                   <i><FaLocationArrow size={25}/></i>
                                                 </span>
-                                                <p>1556 Broadway, suite 416 New York, NY 10120 USA</p>
+                                                <p>8225 E. Main Street
+                                                    Ridgeland, SC 29936</p>
                                             </li>
                                             <li>
-                                                <span className="ci-icon">
-                                                    <img src={time} alt="" />
+                                                <span className="main-street-ci-icon">
+                                                    <i><FaClock size={25}/></i>
                                                 </span>
-                                                <p><span>Mon-Sat:</span> 9 am til 6 pm <span>Sunday:</span> Closed</p>
+                                                <p><span>Mon-Fri:</span> 9 
+                                                am - 6 pm <span>Saturday:</span> 9 am - 3 pm</p>
                                             </li>
                                             <li>
-                                                <span className="ci-icon">
-                                                    <img src={mail} alt="" />
+                                                <span className="main-street-ci-icon">
+                                                <i><HiMail size={25}/></i>
                                                 </span>
-                                                <p>in.design@gmail.com</p>
+                                                <p>FreeCOVIDTestSpot@gmail.com</p>
                                             </li>
                                             <li>
-                                                <span className="ci-icon">
-                                                    <img src={call} alt="" />
+                                                <span className="main-street-ci-icon">
+                                                   <i><IoMdCall size={25}/></i>
                                                 </span>
-                                                <p>+44 20 7722 0088</p>
+                                                <p>843-895-4058</p>
+
                                             </li>
                                         </ul>
                                     </div>
@@ -129,4 +132,4 @@ const ContactUs = () => {
     )
 }
 
-export default ContactUs
+export default MainStreet

@@ -12,12 +12,18 @@ const Pager = (props) => {
                         <li><span>{props.pageTitle}</span></li>
                         </ul>
                         {/* <!--breadcrumb end--> */}
-                        <h2>{props.pageTitle}</h2>
-                        <span>How to contact us</span>
+                        <h2 style={{fontFamily:'monospace'}}>{props.bigTitle}</h2>
+                       
+                          {props.isRed?
+                           <h3>No insurance Required - No Appointments - Walk-Ins Welcome</h3>
+                           :
+                           <span>Contact Us</span>
+                          }
+                        
                     </div>
                     <div class="pger-imgs style2">
                         <div class="abt-imgz">
-                            <img src={props.imgBanner} style={{bottom:100,position:'relative'}}  alt="" />
+                            <img src={props.imgBanner} style={{bottom:100,position:'relative',height:props.height,width:props.width,marginLeft:props.left}}  alt="" />
                         </div>
                     </div>
                     {/* <!--pger-imgs end--> */}

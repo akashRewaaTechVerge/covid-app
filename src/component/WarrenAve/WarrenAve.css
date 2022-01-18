@@ -6,24 +6,38 @@
 
 /* CONTACT PAGE */
 
-.contact-head {
+.contact-head-warrenave {
 	padding: 48px 0 51px;
 }
 
-.contact-head p {
-	color: #24262e;
-	font-size: 20px;
-	line-height: 32px;
+.contact-head-warrenave p {
+	color: #c3120e;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-top: -113px;
+    text-align: center;
+    align-content: center;
+	
 }
 
-.contact_info {
+.contact-head-warrenave .main-title{
+	font-family: monospace sans-serif;
+	font-size: 15px;
+	margin-top: 10px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.contact_info_warrenAve {
 	padding: 67px 70px;
 	border-radius: 10px 0 0 10px;
 	height: 100%;
+	background-color: #f5f5f5 ;
 }
 
-.sub-title.white {
-	color: #fff;
+.warrenAve-sub-title.white {
+	color: #000000;
 	padding-left: 0;
 	margin-top: 0;
 	margin: 0;
@@ -32,10 +46,11 @@
 	font-size: 40px;
 	font-weight: 700;
 	position: relative;
+
 }
 
-.sub-title.white:before {
-	background-color: #619f9d;
+.warrenAve-sub-title.white:before {
+	background-color: #c3120e;
 	top: auto;
 	transform: inherit;
 	bottom: 0;
@@ -47,23 +62,23 @@
 }
 
 
-.cl-list li {
+.warrenAve-cl-list li {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	margin-bottom: 25px;
 }
 
-.cl-list li:last-child {
+.warrenAve-cl-list li:last-child {
 	margin-bottom: 0;
 }
 
-.cl-list li>span {
+.warrenAve-cl-list li>span {
 	width: 35px;
 }
 
-.cl-list li>p {
-	color: #ffffff;
+.warrenAve-cl-list li>p {
+	color: #000000;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 22px;
@@ -71,9 +86,9 @@
 	padding-left: 20px;
 }
 
-.cl-list li>p span {
+.warrenAve-cl-list li>p span {
 	display: inline-block;
-	color: #619f9d;
+	color: #c3120e;
 }
 
 /* CONTACT MAIN FORM */
@@ -83,6 +98,7 @@
 	padding: 86px 80px 50px;
 	border-radius: 0 10px 10px 0;
 	height: 100%;
+	
 }
 
 .contact-main .row {

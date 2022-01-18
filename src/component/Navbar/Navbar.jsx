@@ -35,6 +35,8 @@ const Navbar = () => {
                             <ul>
                                 <li><NavLink activeclassName="active" to="/" >Home</NavLink></li>
                                 <li><NavLink to="/contact">Contact Us</NavLink></li>
+                                <li><NavLink to="/warren_ave">WarrenAve</NavLink></li>
+                                <li><NavLink to="/main_street">MainStreet</NavLink></li>
                             </ul>
                         </nav>
                         {/* <!--logo end--> */}

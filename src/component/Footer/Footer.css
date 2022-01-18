@@ -2,7 +2,7 @@
 
 
 .top-footer {
-    padding: 115px 0 67px;
+    padding: 40px 0 40px;
     border-bottom: 1px solid #267a77;
 }
 
@@ -53,7 +53,7 @@
     font-size: 15px;
     font-weight: 500;
     color: rgba(255, 255, 2255, 0.60);
-    margin-bottom: 53px;
+    margin-bottom: 40px;
     display: block;
 }
 
@@ -88,7 +88,7 @@
     font-size: 16px;
     line-height: 23px;
     font-weight: 500;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .ft-links li:last-child {
@@ -96,13 +96,13 @@
 }
 
 .widget-contact .ft-links li {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 /* BOTTOM FOOTER */
 
 .bottom-footer {
-    padding: 49px 0 95px;
+    padding: 40px 0 40px;
 }
 
 .ft-logo {
@@ -162,4 +162,11 @@
 
 div#html5-image {
     padding: 0 !important;
+}
+
+.footer-img{
+    height: 400px;
+    display: block;
+    position: relative;
+    right: -300px;
 }

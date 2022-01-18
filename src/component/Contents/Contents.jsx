@@ -1,6 +1,6 @@
 import React from 'react'
 import './Contents.css'
-import slot from '../../images/test.png'
+import slot from '../../images/mainStreet.png'
 import icon1 from '../../images/icon3.png'
 import { FaArrowRight } from 'react-icons/fa'
 import fadeIn from 'react-animations/lib/fade-in'
@@ -17,8 +17,8 @@ const Contents = () => {
                             </h2>
                             <p class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms"><span>F</span>ree Service on site</p>
                             <p class="wow fadeInUp mt-n5" data-wow-duration="1000ms" data-wow-delay="300ms" ><span>RT-PCR - 24-48 </span>hr Result</p>
-                            <a href="contact.html" title="" class="lnk-default wow fadeInUp" data-wow-duration="1000ms"
-                                data-wow-delay="500ms">Next <i><FaArrowRight /></i> <span></span></a>
+                            {/* <a href="contact.html" title="" class="lnk-default wow fadeInUp" data-wow-duration="1000ms"
+                                data-wow-delay="500ms">Next <i><FaArrowRight /></i> <span></span></a> */}
                             {/* <!--banz-list end--> */}
                             <div class="clearfix"></div>
                         </div>

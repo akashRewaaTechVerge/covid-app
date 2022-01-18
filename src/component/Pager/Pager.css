@@ -8,6 +8,7 @@
 .pager-info {
 	max-width: 520px;
 	float: left;
+	line-height: 6rem;
 }
 .breadcrumb {
 	background-color: inherit;
@@ -51,6 +52,10 @@
 	font-size: 82px;
 	font-weight: 700;
 	margin-bottom: 24px;
+}
+.pager-info > h3{
+	color:#c3120e;
+	font-weight: 500;
 }
 .pg-title-head > h2 {
 	margin-bottom: 21px;

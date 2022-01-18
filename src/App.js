@@ -7,6 +7,8 @@ import './color.css';
 import './responsive.css'
 import './animate.css'
 import ContactUs from './component/ContactUs/ContactUs';
+import WarrenAve from './component/WarrenAve/WarrenAve';
+import MainStreet from './component/MainStreet/MainStreet';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Routes>
       <Route path="/" element={<Contents/>} />
       <Route path="/contact" element={<ContactUs/>}/>
+      <Route path="/warren_ave" element={<WarrenAve/>}/>
+      <Route path="/main_street" element={<MainStreet/>}/>
       </Routes>
       <Footer/>
       </Router>
