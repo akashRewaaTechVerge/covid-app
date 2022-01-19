@@ -54,7 +54,7 @@ const Footer = () => {
 							<div class="col-lg-6 col-md-12">
 								<div class="row">
 									<div class="col-lg-4 col-md-4 col-sm-6 col-12 ">
-										{isMobile?<Lottie className='footer-img' style={{width:250,height:250,marginLeft:'250px',marginBottom:'-100px'}} options={defaultOpt}   />
+										{isMobile?<Lottie className='footer-img' style={{width:250,height:250,alignItems:'center',marginBottom:'-100px',}} options={defaultOpt}   />
 										:
 										<Lottie className='footer-img' style={{width:250,height:250,marginLeft:'400px',marginBottom:'-80px'}} options={defaultOpt}   />	
 									}
