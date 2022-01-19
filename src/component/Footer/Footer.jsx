@@ -21,12 +21,12 @@ const Footer = () => {
 						<div class="row">
 							<div class="col-lg-6 col-md-12">
 								<div class="widget widget-info">
-									<h3 class="widget-title">NEWSLETTER</h3>
+									{/* <h3 class="widget-title">NEWSLETTER</h3>
 									<form class="widget-form">
 										<input type="text" name="email" placeholder="Your e-mail" />
 										<button type="submit"><i><FaArrowRight /></i></button>
 									</form>
-									<span>Sign up to receive sprecial offers!</span>
+									<span>Sign up to receive sprecial offers!</span> */}
 									<ul class="social-links">
 										<li><a href="#" title=""><i><FaWhatsapp size={20} /></i></a></li>
 										<li><a href="#" title=""><i><FaInstagram size={20} /></i></a></li>
@@ -39,7 +39,7 @@ const Footer = () => {
 							<div class="col-lg-6 col-md-12">
 								<div class="row">
 									<div class="col-lg-4 col-md-4 col-sm-6 col-12 ">
-										<Lottie options={defaultOpt} className="footer-img" style={{right: '-300px',width:400,height:400}} />
+										<Lottie options={defaultOpt}  style={{margin: 0 ,display:'inline-block',width:400,height:400}} />
 									</div>
 								</div>
 							</div>

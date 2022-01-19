@@ -3,14 +3,14 @@ import React from 'react'
 import contactImg from '../../images/corona.png'
 import submit from '../../images/submit.png'
 import { FaClock, FaFacebookF, FaInstagram, FaLocationArrow, FaWhatsapp } from 'react-icons/fa'
-import { HiMail} from 'react-icons/hi'
-import {IoMdCall} from 'react-icons/io'
+import { HiMail } from 'react-icons/hi'
+import { IoMdCall } from 'react-icons/io'
 import Pager from '../Pager/Pager'
 import './MainStreet.css'
 const MainStreet = () => {
     return (
         <div>
-            <Pager pageTitle="MainStreet" bigTitle="Get Tested Safely For Free Today" isRed={true} imgBanner={contactImg}  height="600px" left="20%" />
+            <Pager pageTitle="MainStreet" bigTitle="Get Tested Safely For Free Today" isRed={true} imgBanner={contactImg} height="600px" left="20%" />
             <section className="page-content">
                 <div className="container">
                     <div className="contact-page">
@@ -27,30 +27,29 @@ const MainStreet = () => {
                                         <ul className="main-street-cl-list">
                                             <li>
                                                 <span className="main-street-ci-icon">
-                                                   <i><FaLocationArrow size={25}/></i>
+                                                    <i><FaLocationArrow size={25} /></i>
                                                 </span>
                                                 <p>8225 E. Main Street
                                                     Ridgeland, SC 29936</p>
                                             </li>
                                             <li>
                                                 <span className="main-street-ci-icon">
-                                                    <i><FaClock size={25}/></i>
+                                                    <i><FaClock size={25} /></i>
                                                 </span>
-                                                <p><span>Mon-Fri:</span> 9 
-                                                am - 6 pm <span>Saturday:</span> 9 am - 3 pm</p>
+                                                <p><span>Mon-Fri:</span> 9
+                                                    am - 6 pm <span>Saturday:</span> 9 am - 3 pm</p>
                                             </li>
                                             <li>
                                                 <span className="main-street-ci-icon">
-                                                <i><HiMail size={25}/></i>
+                                                    <i><HiMail size={25} /></i>
                                                 </span>
                                                 <p>FreeCOVIDTestSpot@gmail.com</p>
                                             </li>
                                             <li>
                                                 <span className="main-street-ci-icon">
-                                                   <i><IoMdCall size={25}/></i>
+                                                    <i><IoMdCall size={25} /></i>
                                                 </span>
                                                 <p>(843)895-4058</p>
-
                                             </li>
                                         </ul>
                                     </div>
