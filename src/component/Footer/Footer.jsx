@@ -42,7 +42,7 @@ const Footer = () => {
 										<button type="submit"><i><FaArrowRight /></i></button>
 									</form>
 									<span>Sign up to receive sprecial offers!</span> */}
-									<ul class="social-links">
+									<ul class="social-links text-center">
 										<li><a href="#" title=""><i><FaWhatsapp size={20} /></i></a></li>
 										<li><a href="#" title=""><i><FaInstagram size={20} /></i></a></li>
 										<li><a href="#" title=""><i><FaFacebook size={20} /></i></a></li>

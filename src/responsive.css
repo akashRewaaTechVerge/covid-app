@@ -199,7 +199,7 @@
 	.contact-social > span {margin-bottom: 20px;}
 	.social-links.without-bg {margin-left: 0;width: 100%;}
 	.social-links.without-bg li:last-child {margin-right: 0;}
-
+	.social-links li {margin-top: 10px; text-align: center !important;}
 	.section-title > p {font-size: 18px;line-height: 32px;}
 	.option-set li {padding: 0 15px;}
 	.option-set li a {font-size: 14px;}
@@ -245,6 +245,7 @@
 	.ft-logo {width: 100%;margin-bottom: 20px;}
 	.btm-links {width: 100%;}
 	.bottom-footer {text-align: center;}
+	.social-links li {margin-top: 10px; text-align: center !important;}
 	.sub-title {font-size: 30px;}
 	.section-title .lnk-default2 {display: none;}
 	.project-text > p {font-size: 18px;line-height: 34px;margin-bottom: 35px;}
@@ -298,6 +299,7 @@
 	.abt-imgz > img {max-width: 100%;margin: 0;margin-bottom: 10px;}
 	.process-section ul li {width: 100%;}
 	.abt-txt {position: static;}
+	.social-links li {margin-top: 10px; text-align: center !important; align-items: center;}
 	.proz-mint:before {display: none;}
 	.proz-mint {border-bottom: 2px solid #bdbdc0;}
 	.p-num {bottom: 10px;}
