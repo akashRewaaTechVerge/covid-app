@@ -9,6 +9,7 @@ import './animate.css'
 import ContactUs from './component/ContactUs/ContactUs';
 import WarrenAve from './component/WarrenAve/WarrenAve';
 import MainStreet from './component/MainStreet/MainStreet';
+import GoToTop from './component/GotoTop/GoToTop';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="/main_street" element={<MainStreet/>}/>
       </Routes>
       <Footer/>
+      <GoToTop />
       </Router>
     </>
   );
