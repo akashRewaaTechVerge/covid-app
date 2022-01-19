@@ -218,6 +218,7 @@
 	.consult-text.style2 {padding: 60px 40px 75px 40px;}
 	.subsc-form input {width: 100%;}
 	.subsc-form .lnk-default {margin-left: 0;margin-top: 20px;}
+	.widget-info {margin: 0 auto;max-width: 460px;margin-bottom: -150px;}
 	a {
 		text-decoration: none;
 	}
@@ -273,6 +274,7 @@
 	.pro-head > h2 {font-size: 22px;}
 	.pz-head > h3 {font-size: 18px;}
 	.subsc-form {text-align: left;}
+	.widget-info {margin: 0 auto;max-width: 460px;margin-bottom: -150px;}
 	a {
 		text-decoration: none;
 	}

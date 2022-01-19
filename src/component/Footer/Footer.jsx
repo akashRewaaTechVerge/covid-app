@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaArrowRight, FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import './Footer.css'
 import dose from '../../images/dose.png'
 import Lottie from 'react-lottie'
 import footerAnim from '../../animation/footer.json'
+import { Link } from 'react-router-dom'
 const Footer = () => {
 	const defaultOpt={
 		loop:true,
@@ -13,6 +14,20 @@ const Footer = () => {
 			preserveAspectRatio: 'xMidYMid slice',
 		  },
 	}
+	const [windowDimension, setWindowDimension] = useState(null);
+    useEffect(() => {
+        setWindowDimension(window.innerWidth);
+    }, []);
+
+    useEffect(() => {
+        function handleResize() {
+            setWindowDimension(window.innerWidth);
+        }
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const isMobile = windowDimension <= 640;
 	return (
 		<div>
 			<footer>
@@ -39,7 +54,10 @@ const Footer = () => {
 							<div class="col-lg-6 col-md-12">
 								<div class="row">
 									<div class="col-lg-4 col-md-4 col-sm-6 col-12 ">
-										<Lottie options={defaultOpt}  style={{margin: 0 ,display:'inline-block',width:400,height:400}} />
+										{isMobile?<Lottie className='footer-img' style={{width:250,height:250,marginLeft:'250px',marginBottom:'-100px'}} options={defaultOpt}   />
+										:
+										<Lottie className='footer-img' style={{width:250,height:250,marginLeft:'400px',marginBottom:'-80px'}} options={defaultOpt}   />	
+									}
 									</div>
 								</div>
 							</div>
@@ -53,8 +71,7 @@ const Footer = () => {
 						</div>
 						{/* <!--ft-logo end--> */}
 						<ul class="btm-links">
-							<li><a href="#" title="">Privacy Policy</a></li>
-							<li><a href="#" title="">Terms and Conditions</a></li>
+							<li>Copyright © 2022 All rights reserved by <Link to="/">Weswab</Link> </li>
 						</ul>
 						{/* <!--btm-links end--> */}
 						<div class="clearfix"></div>
