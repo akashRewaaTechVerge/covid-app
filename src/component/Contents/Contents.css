@@ -22,7 +22,7 @@
 
 
  .banner-content {
-     padding-top: 74px;
+     padding-top: 50px;
  }
 
  .banner-content>h2 {
@@ -36,9 +36,9 @@
 
  .banner-content>p {
      color: #070c1f;
-     font-size: 21px;
+     font-size: 30px;
      line-height: 32px;
-     margin-bottom: 54px;
+     margin-bottom: 20px;
      padding-right: 110px;
  }
 
@@ -134,6 +134,7 @@
 
  .banner-content>p span {
      color: #0d6b68;
+     font-weight: 700;
  }
 
  .bzn-csd>span {

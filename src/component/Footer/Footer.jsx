@@ -2,7 +2,17 @@ import React from 'react'
 import { FaArrowRight, FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import './Footer.css'
 import dose from '../../images/dose.png'
+import Lottie from 'react-lottie'
+import footerAnim from '../../animation/footer.json'
 const Footer = () => {
+	const defaultOpt={
+		loop:true,
+		autoplay:true,
+		animationData:footerAnim,
+		rendererSettings: {
+			preserveAspectRatio: 'xMidYMid slice',
+		  },
+	}
 	return (
 		<div>
 			<footer>
@@ -29,7 +39,7 @@ const Footer = () => {
 							<div class="col-lg-6 col-md-12">
 								<div class="row">
 									<div class="col-lg-4 col-md-4 col-sm-6 col-12 ">
-										<img src={dose} className='footer-img' />
+										<Lottie options={defaultOpt} className="footer-img" style={{right: '-300px',width:400,height:400}} />
 									</div>
 								</div>
 							</div>

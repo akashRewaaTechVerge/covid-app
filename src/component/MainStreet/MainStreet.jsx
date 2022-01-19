@@ -49,7 +49,7 @@ const MainStreet = () => {
                                                 <span className="main-street-ci-icon">
                                                    <i><IoMdCall size={25}/></i>
                                                 </span>
-                                                <p>843-895-4058</p>
+                                                <p>(843)895-4058</p>
 
                                             </li>
                                         </ul>

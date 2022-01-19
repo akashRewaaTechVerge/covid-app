@@ -1,26 +1,12 @@
 import React from 'react'
 import './Navbar.css'
-import {   FaTimes } from 'react-icons/fa'
-import { useState, useEffect } from 'react';
+import { FaTimes } from 'react-icons/fa'
+import { useState } from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 const Navbar = () => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-    const [windowDimension, setWindowDimension] = useState(null);
-    useEffect(() => {
-        setWindowDimension(window.innerWidth);
-    }, []);
-
-    useEffect(() => {
-        function handleResize() {
-            setWindowDimension(window.innerWidth);
-        }
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
-    const isMobile = windowDimension <= 640;
     return (
         <>
             <header className='sticky'>
@@ -61,7 +47,9 @@ const Navbar = () => {
             <div className={click ? "responsive-mobile-menu active" : "responsive-mobile-menu"} onClick={closeMobileMenu}>
                 <ul>
                     <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/contact">Contact</NavLink></li>
+                    <li><NavLink to="/contact">Contact Us</NavLink></li>
+                    <li><NavLink to="/warren_ave">WarrenAve</NavLink></li>
+                    <li><NavLink to="/main_street">MainStreet</NavLink></li>
                 </ul>
             </div>
             {/* <!--responsive-mobile-menu end--> */}

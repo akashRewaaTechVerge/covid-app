@@ -49,7 +49,7 @@ const WarrenAve = () => {
                                                 <span className="warrenAve-ci-icon">
                                                 <i><IoMdCall size={25}/></i>
                                                 </span>
-                                                <p>Gogi Patel : 630-903-4866<br/>Ravi Patel : 630-440-0736</p>
+                                                <p>Gogi Patel : (630)903-4866<br/>Ravi Patel : (630)440-0736</p>
                                
                                             </li>
                                         </ul>
