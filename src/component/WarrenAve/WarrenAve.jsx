@@ -10,7 +10,7 @@ import Pager from '../Pager/Pager'
 const WarrenAve = () => {
     return (
         <div>
-            <Pager pageTitle="WarrenAve" isBlue={true} bigTitle="FREE PCR &#38; RAPID COVID-19 TESTING " isRed={true} imgBanner={contactImg} height="600px" left="20%" />
+            <Pager pageTitle="Hillside" isBlue={true} bigTitle="FREE PCR &#38; RAPID COVID-19 TESTING " isRed={true} imgBanner={contactImg} height="600px" left="20%" />
             <section className="page-content">
                 <div className="container">
                     <div className="contact-page">
