@@ -5,36 +5,48 @@ import dose from '../../images/dose.png'
 import Lottie from 'react-lottie'
 import footerAnim from '../../animation/footer.json'
 import { Link } from 'react-router-dom'
-const Footer = () => {
-	const defaultOpt={
-		loop:true,
-		autoplay:true,
-		animationData:footerAnim,
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
+const Footer = (props) => {
+	
+	const pos = { lat: 43.319740, lng: -76.408730 }
+	const defaultOpt = {
+		loop: true,
+		autoplay: true,
+		animationData: footerAnim,
 		rendererSettings: {
 			preserveAspectRatio: 'xMidYMid slice',
-		  },
+		},
 	}
 	const [windowDimension, setWindowDimension] = useState(null);
-    useEffect(() => {
-        setWindowDimension(window.innerWidth);
-    }, []);
+	useEffect(() => {
+		setWindowDimension(window.innerWidth);
+	}, []);
 
-    useEffect(() => {
-        function handleResize() {
-            setWindowDimension(window.innerWidth);
-        }
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+	useEffect(() => {
+		function handleResize() {
+			setWindowDimension(window.innerWidth);
+		}
+		window.addEventListener("resize", handleResize);
+		return () => window.removeEventListener("resize", handleResize);
+	}, []);
 
-    const isMobile = windowDimension <= 640;
+	const isMobile = windowDimension <= 640;
 	return (
 		<div>
 			<footer>
 				<div class="container">
 					<div class="top-footer">
-						<div class="row">
-							<div class="col-lg-6 col-md-12">
+						<div class="d-flex flex-row justify-content-between">
+
+						
+							<div className='map-display'>
+								<Map google={props.google} center={
+									pos
+								} zoom={15}   >
+									<Marker position={pos} />
+								</Map>
+							</div>
+							<div class=" p-2">
 								<div class="widget widget-info">
 									{/* <h3 class="widget-title">NEWSLETTER</h3>
 									<form class="widget-form">
@@ -42,24 +54,23 @@ const Footer = () => {
 										<button type="submit"><i><FaArrowRight /></i></button>
 									</form>
 									<span>Sign up to receive sprecial offers!</span> */}
-									<ul class="social-links text-center">
+									<ul class="social-links ">
 										<li><a href="#" title=""><i><FaWhatsapp size={20} /></i></a></li>
 										<li><a href="#" title=""><i><FaInstagram size={20} /></i></a></li>
 										<li><a href="#" title=""><i><FaFacebook size={20} /></i></a></li>
 									</ul>
 									{/* <!--social-links end--> */}
 								</div>
+
 								{/* <!--widget-info end--> */}
 							</div>
-							<div class="col-lg-6 col-md-12">
-								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-6 col-12 ">
-										{isMobile?<Lottie className='footer-img' style={{width:250,height:250,alignItems:'center',marginBottom:'-100px',}} options={defaultOpt}   />
-										:
-										<Lottie className='footer-img' style={{width:250,height:250,marginLeft:'400px',marginBottom:'-80px'}} options={defaultOpt}   />	
-									}
-									</div>
-								</div>
+							<div class=" p-2">
+
+								{isMobile ? <Lottie className='footer-img' style={{ width: 250, height: 250, alignItems: 'center', marginBottom: '-100px', }} options={defaultOpt} />
+									:
+									<Lottie className='footer-img' style={{ width: 250, height: 250, position:'relative',left:'10%',top:'21%' }} options={defaultOpt} />
+								}
+
 							</div>
 
 						</div>
@@ -84,4 +95,6 @@ const Footer = () => {
 	)
 }
 
-export default Footer
+export default GoogleApiWrapper({
+	apiKey: "AIzaSyAsevoeq8_HmapHASNVnW9I7iOBPlnlh2k",
+})(Footer)

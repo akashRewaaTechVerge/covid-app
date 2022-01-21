@@ -7,6 +7,8 @@ const cors = require("cors");
 const app = express();
 
 const buildPath = path.join(__dirname, '..', 'build');
+const views = path.join(__dirname, './views');
+console.log(views);
 app.use(cors());
 app.use(express.json());
 app.use(express.static(buildPath));
