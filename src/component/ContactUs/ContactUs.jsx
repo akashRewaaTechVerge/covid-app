@@ -6,7 +6,10 @@ import map from '../../images/ci1.png'
 import time from '../../images/ci2.png'
 import mail from '../../images/ci3.png'
 import call from '../../images/ci4.png'
+import image1 from '../../images/image1.jpeg'
+import image2 from '../../images/image2.jpeg'
 import submit from '../../images/submit.png'
+
 import { useState } from 'react';
 
 import axios from 'axios'
@@ -64,15 +67,108 @@ const ContactUs = () => {
                                 {result.message}
 
                             </p>)}
-                            <p>Any questions or suggestions? <br /> Write us a message and we will contact you!</p>
+                            {/* <p>Any questions or suggestions? <br /> Write us a message and we will contact you!</p> */}
                         
                         </div>
                         {/* <!--contact-head end--> */}
+                   
+                        {/* <!--contact-main end--> */}
+                        {/* <div className="contact-social">
+                            <span>Subscribe to our social networks :</span>
+                            <ul className="social-links without-bg">
+                                <li><a href="#" title=""><i><FaWhatsapp /></i></a></li>
+                                <li><a href="#" title=""><i><FaInstagram /></i></a></li>
+                                <li><a href="#" title=""><i><FaFacebookF /></i></a></li>
+                            </ul>
+                        </div> */}
+                        {/* <!--contact-social end--> */}
+                    </div>
+                    {/* <!--contact-page end--> */}
+                </div>
+                <div class="container">
+                   <div class="row">
+                        <div className="col">
+                        <div class="card">
+                            <img src={image1} className="col image1"  />
+                            <div class="card-body">
+                                {/* <h5 class="card-title">Card title</h5> */}
+                                {/* <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a> */}
+                            </div>
+                            </div>
+                        </div>
+                           
+                         
+                        <div className="col">
+                            <div class="card">
+                                <img src={image2} className="col image2" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Location Details</h5>
+                                    <p class="card-text">
+                                        <p>Sitha patel <br></br><br></br><p>Heath Laney</p><br></br>  
+                                        <p>Location:8225 E. Main Street <br></br><br></br></p> <p>Rigdeland, SC 29936 <br></br> <br></br></p>
+                                        <p> FreeCOVIDTestSpot@gmail.com <br></br><br></br> </p>
+                                        <p>843-895-4058</p>
+                                        </p>
+                                        
+                                    </p>
+                                    {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
+                                </div>
+                            </div>
+                        </div>
+
+
                         <div className="contact-main">
                             <div className="row">
+                            <div className="col-lg-8">
+                                    <div className="contact-main-form">
+                                        <form method="post" action="#" id="contact-form">
+                                            <div className="response"></div>
+                                            <div className="row">
+                                                <div className="col-sm-6">
+                                                    <div className="form-group">
+                                                        <label>First Name</label>
+                                                        <input type="text" name="firstName" className="form-control name" placeholder="First Name" value={values.firstName} onChange={handleChange} />
+                                                    </div>
+                                                </div>
+                                                <div className="col-sm-6">
+                                                    <div className="form-group">
+                                                        <label>Last Name</label>
+                                                      
+                                                        <input type="text" name="lastName" value={values.lastName} onChange={handleChange} className="form-control name" placeholder="Last Name" />
+                                                    </div>
+                                                </div>
+                                                <div className="col-sm-6">
+                                                    <div className="form-group">
+                                                        <label>E-mail</label>
+                                                        <input type="email" name="email" value={values.email} onChange={handleChange} className="form-control email" placeholder="Example@gmail.com" />
+                                                    </div>
+                                                </div>
+                                                <div className="col-sm-6">
+                                                    <div className="form-group">
+                                                        <label>Phone Number</label>
+                                                        <input type="text" name="phoneNumber" value={values.phoneNumber} onChange={handleChange} className="form-control" placeholder="44 20 7700 0055" />
+                                                    </div>
+                                                </div>
+                                                <div className="col-sm-10">
+                                                    <div className="form-group">
+                                                        <label>Message</label>
+                                                        <textarea name='message' className="form-control" value={values.message} onChange={handleChange} placeholder="Hello! I have this question..."></textarea>
+                                                    </div>
+                                                </div>
+                                                <div className="col-sm-2">
+                                                    <div className="form-submit">
+                                                        <button type="button" id="submit"><img src={submit} alt="" onClick={formSubmit} /></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
                                 <div className="col-lg-4">
                                     <div className="contact_info">
-                                        <h3 className="sub-title white">Contacts</h3>
+                                        <h3 className="sub-title white">Maps</h3>
                                         <ul className="cl-list">
                                             <li>
                                                 <span className="ci-icon">
@@ -101,80 +197,13 @@ const ContactUs = () => {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-lg-8">
-                                    <div className="contact-main-form">
-                                        <form method="post" action="#" id="contact-form">
-                                            <div className="response"></div>
-                                            <div className="row">
-                                                <div className="col-sm-6">
-                                                    <div className="form-group">
-                                                        <label>First Name</label>
-                                                        <input type="text" name="firstName" className="form-control name" placeholder="First Name" value={values.firstName} onChange={handleChange} />
-                                                    </div>
-                                                    {/* <!--form-group end--> */}
-                                                </div>
-                                                <div className="col-sm-6">
-                                                    <div className="form-group">
-                                                        <label>Last Name</label>
-                                                        {/* <select className="form-control">
-                                                            <option>Los Angeles</option>
-                                                            <option>Los Angeles</option>
-                                                            <option>Los Angeles</option>
-                                                            <option>Los Angeles</option>
-                                                        </select> */}
-                                                        <input type="text" name="lastName" value={values.lastName} onChange={handleChange} className="form-control name" placeholder="Last Name" />
-                                                    </div>
-                                                    {/* <!--form-group end--> */}
-                                                </div>
-                                                <div className="col-sm-6">
-                                                    <div className="form-group">
-                                                        <label>E-mail</label>
-                                                        <input type="email" name="email" value={values.email} onChange={handleChange} className="form-control email" placeholder="Example@gmail.com" />
-                                                    </div>
-                                                    {/* <!--form-group end--> */}
-                                                </div>
-                                                <div className="col-sm-6">
-                                                    <div className="form-group">
-                                                        <label>Phone Number</label>
-                                                        <input type="text" name="phoneNumber" value={values.phoneNumber} onChange={handleChange} className="form-control" placeholder="44 20 7700 0055" />
-                                                    </div>
-                                                    {/* <!--form-group end--> */}
-                                                </div>
-                                                <div className="col-sm-10">
-                                                    <div className="form-group">
-                                                        <label>Message</label>
-                                                        <textarea name='message' className="form-control" value={values.message} onChange={handleChange} placeholder="Hello! I have this question..."></textarea>
-                                                    </div>
-                                                    {/* <!--form-group end--> */}
-                                                </div>
-                                                <div className="col-sm-2">
-                                                    <div className="form-submit">
-                                                        <button type="button" id="submit"><img src={submit} alt="" onClick={formSubmit} /></button>
-                                                    </div>
-                                                    {/* <!--form-submit end--> */}
-                                                </div>
-                                            </div>
-
-                                        </form>
-                                    </div>
-                                    {/* <!--contact-main-form end--> */}
-                                </div>
-                            </div>
+                            </div> 
                         </div>
-                        {/* <!--contact-main end--> */}
-                        {/* <div className="contact-social">
-                            <span>Subscribe to our social networks :</span>
-                            <ul className="social-links without-bg">
-                                <li><a href="#" title=""><i><FaWhatsapp /></i></a></li>
-                                <li><a href="#" title=""><i><FaInstagram /></i></a></li>
-                                <li><a href="#" title=""><i><FaFacebookF /></i></a></li>
-                            </ul>
-                        </div> */}
-                        {/* <!--contact-social end--> */}
                     </div>
-                    {/* <!--contact-page end--> */}
                 </div>
             </section>
+
+
             {/* <!--page-content end--> */}
         </div>
     )

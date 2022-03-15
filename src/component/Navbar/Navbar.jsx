@@ -20,9 +20,10 @@ const Navbar = () => {
                         <nav classNameName='text-center'>
                             <ul>
                                 <li><NavLink activeclassName="active" to="/" >Home</NavLink></li>
-                                <li><NavLink to="/contact">Contact Us</NavLink></li>
-                                <li><NavLink to="/warren_ave">Hillside</NavLink></li>
-                                <li><NavLink to="/main_street">Ridgeland</NavLink></li>
+                                <li><NavLink to="/SouthCarolina">SouthCarolina</NavLink></li>
+                                <li><NavLink to="/Illinois">Illinois</NavLink></li>
+                                <li><NavLink to="/Missouri">Missouri</NavLink></li>
+                                <li><NavLink to="/WorkPlace">WorkPlace-Testing</NavLink></li>
                             </ul>
                         </nav>
                         {/* <!--logo end--> */}

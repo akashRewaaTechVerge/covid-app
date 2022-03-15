@@ -1,0 +1,30 @@
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+  }
+
+  h4.card-title.offer {
+    text-align: center;
+    font-size: 46px;
+    margin-bottom: 12%;
+}
+.contact-head-mainStreet {
+    margin-bottom: 10%;
+}
+section.page-content {
+    margin-bottom: 0%;
+}
+.contact-head-mainStreet {
+    margin-bottom: 18%;
+}
+ 
+p.testingTitle {
+    margin-left: 41%;
+    font-size: 38px;
+    color: rgb(8, 2, 2);
+    margin-bottom: 2%;
+}
+.main-title {
+    margin-left: 11%;
+    width: 80%;
+}

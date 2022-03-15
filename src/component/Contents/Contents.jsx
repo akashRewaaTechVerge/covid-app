@@ -13,7 +13,9 @@ import covidRapid from '../../images/covidRapid.jpg'
 import covidtest from '../../images/testcovid.webp'
 import rapidtestservice from '../../images/rapidtestservice.webp'
 import pcrtestservice from '../../images/pcrtestservice.webp'
-import mask from '../../images/mask.png'
+import {RiSurgicalMaskFill} from 'react-icons/ri'
+import { NavLink  , Link} from 'react-router-dom';
+
   
 const Contents = () => {
     return (
@@ -194,21 +196,15 @@ const Contents = () => {
                                 <div class="card border-0 rounded-0 mb-3">
                                     <div class="card-icon text-center">
                                         <span class="sr-only">head side cough light icon</span>
-                                        <i class='fas fa-head-side-cough fa-4x' style={{color: 'blue'}}></i>
+                                        <i class='fas fa-head-side-cough fa-4x' style={{color: '#0d6b68'}}></i>
                                     </div>
                                     <div class="card-body ">
                                         <div class="card-title mb-1 h3 mb-1 text-left symptoms">Symptoms</div>
                                         <div class="outer-container">
-                                            {/* <ul class="caret-list">
-                                                <li>
-                                                    <a href="#"> Check your symptoms </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        Steps you can take if you are sick
-                                                    </a>
-                                                </li>
-                                            </ul> */}
+                                        <ul class="caret-list">
+                                              <li><Link to='/#' className="nav-link">Check your symptoms</Link></li>
+                                              <li><Link to='/#' className="nav-link">Steps you can take if you are sick</Link></li>    
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -224,10 +220,11 @@ const Contents = () => {
                                     <div class="card-body ">
                                         <div class="card-title mb-1 h3 mb-1 text-left">Quarantine &amp; Isolation</div>
                                         <div class="outer-container">
-                                            {/* <ul class="caret-list">
-                                                <li><a href="/coronavirus/2019-ncov/your-health/quarantine-isolation.html">When to quarantine and isolate</a></li>
-                                                <li><a href="/coronavirus/2019-ncov/if-you-are-sick/">Caring for someone sick at home</a></li>
-                                            </ul> */}
+                                            
+                                           <ul class="caret-list">
+                                              <li><Link to='/#' className="nav-link">When to quarantine and isolate</Link></li>
+                                              <li><Link to='/#' className="nav-link">Caring for someone sick at home</Link></li>    
+                                            </ul>  
                                         </div>
                                     </div>
                                 </div>
@@ -236,17 +233,17 @@ const Contents = () => {
                         <div class="p-0 m-0 mask-test col-md-4">
                             <div class="p-0 m-0">
                                 <div class="card border-0 rounded-0 mb-3">
-                                    <div class="card-body ">
-                                    <i class="fa-duotone fa-face-mask"></i>
+                                    <div class="card-body facemask">
+   
                                         {/* <img src={mask} alt="Illustration of a bandaid" class="text-center mask"
                                             style={{ color:"blue" , filter: "drop-shadow(.8px .8px 0px #006778) drop-shadow(-.8px .8px 0px #006778)", height: "90px", width: "100px" ,margintop: "-12px" }} /> */}
-                                   
+                                            <RiSurgicalMaskFill size={63} className="face-mask"/>
                                         <h2 class="h3 mt-0 mb-1">Testing &amp; Masks</h2>
                                         <div class="outer-container">
-                                            {/* <ul class="caret-list">
-                                                <li><a href="/coronavirus/2019-ncov/testing/self-testing.html">Self-testing</a></li>
-                                                <li><a href="/coronavirus/2019-ncov/prevent-getting-sick/masks.html">Use masks to slow the spread</a></li>
-                                            </ul> */}
+                                            <ul class="caret-list faceicone">
+                                              <li><Link to='/#' className="nav-link">Self-testing</Link></li>
+                                              <li><Link to='/#' className="nav-link">Use masks to slow the spread</Link></li>    
+                                            </ul>  
                                         </div>
                                     </div>
                                 </div>

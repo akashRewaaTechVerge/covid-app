@@ -2,6 +2,7 @@ import './App.css';
 import Contents from './component/Contents/Contents';
 import Footer from './component/Footer/Footer';
 import Navbar from './component/Navbar/Navbar';
+import WorkPlace from './component/WorkPlace/WorkPlace';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './color.css';
 import './responsive.css'
@@ -18,9 +19,10 @@ function App() {
       <Navbar/>
       <Routes>
       <Route path="/" element={<Contents/>} />
-      <Route path="/contact" element={<ContactUs/>}/>
-      <Route path="/warren_ave" element={<WarrenAve/>}/>
-      <Route path="/main_street" element={<MainStreet/>}/>
+      <Route path="/SouthCarolina" element={<ContactUs/>}/>
+      <Route path="/Illinois" element={<WarrenAve/>}/>
+      <Route path="/Missouri" element={<MainStreet/>}/>
+      <Route path="/WorkPlace" element={<WorkPlace/>}/>
       </Routes>
       <Footer/>
       <GoToTop />

@@ -408,4 +408,15 @@ span.fa.fa-bed.fa-4x.bed {
     margin-left: 35%;
 }
  
+svg.face-mask {
+    margin-left: 35%;
+    color: #0d6b68;
+}
+.card-body.facemask {
+    margin-top: -6px;
+}
+
+ul.caret-list.faceicone {
+    margin-left: 35px;
+}
 /* mini Card align */

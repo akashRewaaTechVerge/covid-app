@@ -182,3 +182,37 @@ select {
 	display: inline-block;
 	font-size: 22px;
 }
+
+img.col.image1 {
+    width: 40%;
+    margin-left: 30%;
+}
+
+img.col.image2 {
+    width: 37%;
+    margin-left: 25%;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px solid rgba(0,0,0,.125);
+    border-radius: 1rem;
+	/* background: rgb(167, 13, 13); */
+}
+.card-text:last-child {
+ 
+    margin-left: 29%;
+  
+}
+.page-content {
+    padding: 100px 0 175px;
+    /* background: black; */
+}
+h5.card-title {
+    margin-left: 29%;
+}
