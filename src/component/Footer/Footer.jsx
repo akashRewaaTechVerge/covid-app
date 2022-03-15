@@ -96,5 +96,5 @@ const Footer = (props) => {
 }
 
 export default GoogleApiWrapper({
-	apiKey: "AIzaSyAsevoeq8_HmapHASNVnW9I7iOBPlnlh2k",
+	apiKey: "AIzaSyAb-fX2IV_idE2Iwba-2aktnyjO3I3CImo",
 })(Footer)

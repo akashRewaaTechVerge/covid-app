@@ -150,5 +150,262 @@
      width: 100%;
      height: 100%;
  }
-
  
+
+ .covid-content>h5 {
+    color: #070c1f;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 96px;
+    margin-bottom: 39px;
+    text-align: center;
+}
+ 
+.covid-content {
+    padding-top: 50px;
+    /* color: #07080a; */
+    /* font-size: 30px; */
+    font-weight: 700;
+    /* text-transform: capitalize; */
+    /* line-height: 1px; */
+    margin-bottom: 39px;
+    text-align: center;
+    margin-left: 11%;
+}
+
+.covid-content.rapid-test>h5 {
+    color: #070c1f;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 96px;
+    margin-bottom: 39px;
+    text-align: center;
+   
+}
+.covid-content.rapid-test {
+    margin-right: 15%;
+}
+section.homeTest {
+    background: #ffd8b1;
+    min-height: 99px;
+    border-top: 18px solid #1e353a;
+    border-bottom: 1px solid #1e353a;
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.3);
+}
+section.repi-test {
+    background: #34cad9;
+    min-height: 99px;
+    border-top: 18px solid #1e353a;
+    border-bottom: 1px solid #1e353a;
+     box-shadow: 0 10px 10px 10px rgba(0,0,0,0.3);
+}
+
+/* Pcr backgournd */
+section.pcr-test {
+    background: #dee2ff;
+    min-height: 99px;
+    border-top: 18px solid #1e353a;
+    border-bottom: 18px solid #1e353a;
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.3);
+}
+.covid-content.pcr-test {
+    margin-right: 10%;
+}
+.banner-slide.pcrimg {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    width: 83%;
+    margin-left: 13%;
+}
+
+.banner-slider.rapidtest {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    width: 83%;
+}
+ 
+.banner-slider.hmtest {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+img.img-file.hmtest {
+    margin-left: -15%;
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+    margin-top: -25px;
+}
+
+/* Our Service */
+.row.service-img {
+    margin-top: 6%;
+}
+
+.covid-content>h5 {
+    color: #03050a;
+    font-size: 30px;
+    font-weight: 750;
+    text-transform: capitalize;
+    line-height: 100px;
+    margin-bottom: 44px;
+    text-align: center;
+}   
+
+/* Images */
+.card.Covid-Test {
+    margin-left: 1%;
+}
+.card.Antigen-Test {
+    margin-left: 3%;
+}
+
+.card.home-test {
+    margin-left: 3%;
+}
+.container-card {
+    display: flex;
+    width: 100%;
+    margin: 1em auto;
+    }
+    .mini-card {
+    display: flex;
+    width: 382px;
+    max-width: 100%;
+    margin: 1em;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    }
+    .image {
+        min-width: 150px;
+        background: turquoise;
+    }
+    .text {
+        font-size: .875em;
+        line-height: 1.55;
+        padding: 8px;
+    }
+
+
+    /* If the amount of items is above 3 */
+    /* Change the layout direction */
+        .container-card > :nth-last-child(n+2),
+        .container-card > :nth-last-child(n+2) ~ * {
+            flex-direction: column;
+        }
+
+/* And change the image height and color */
+.container-card > :nth-last-child(n+3) .image,
+.container-card > :nth-last-child(n+3) ~ * .image {
+height: 120px;
+background: salmon;
+}
+
+
+@media only screen and (min-width: 350px) {
+    .covid-content>h5 {
+        font-size: 18px;
+        /* font-weight: 750; */
+    }
+    .col-lg-4.home-test {
+        margin-top: 4%;
+    }
+    .covid-content.rapid-test>h5 {
+        color: #070c1f;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: capitalize;
+        line-height: 96px;
+        margin-bottom: 39px;
+        text-align: center;
+    }   
+    li.pcrtext {
+        margin-top: -35px
+    }
+    img.img-file {
+        margin-bottom: 17px;
+    }
+    .mini-card { grid-template-columns: repeat(2, 1fr); }
+ 
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        padding-right: var(--bs-gutter-x,.75rem);
+        padding-left: var(--bs-gutter-x,.75rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .card.border-0.rounded-0.mb-3 {
+        margin-left: 20%;
+    }
+    img.text-center.mask {
+        margin-left: 21%;
+        margin-top: -30px;
+    }
+    
+    h2.h3.mt-0.mb-1 {
+        margin-left: 40px;
+    }
+
+    .card-title.mb-1.h3.mb-1.text-left.symptoms {
+        margin-left: 15%;
+    }
+    .card-icon.text-center {
+        margin-right: 49%;
+    }
+}
+@media only screen and (min-width: 500px) {
+    .card-icon.text-center {
+        margin-right: 45%;
+    }
+}    
+h5.card-title {
+    text-align: center;
+    font-size: 25px;
+    color: initial;
+    margin-bottom: 26px;
+    margin-top: 17px;
+    line-height: 0.55;
+
+}
+
+section.cowin-services {
+    border-bottom: 18px solid #1e353a;
+}
+
+.card-text:last-child {
+    margin-bottom: 43px;
+    margin-left: 42px;
+    font-size: 15px;
+    font-style: normal;
+}
+
+.card-icon.text-center {
+    margin-right: 30%;
+   
+}
+
+.card-title.mb-1.h3.mb-1.text-left.symptoms {
+    margin-left: 5%;
+}
+.card-title.h4 {
+    /* width: 45%; */
+    font-size: 35px;
+    margin-left: -5%;
+    color: #0d6b68;
+}
+span.fa.fa-bed.fa-4x.bed {
+    color: #0d6b68;
+}
+
+img.text-center.mask {
+    margin-left: 30%;
+    margin-top: -30px;
+    color: #0d6b68;
+    width: 25%;
+}
+span.fa.fa-bed.fa-4x.bed {
+    margin-left: 35%;
+}
+ 
+/* mini Card align */
