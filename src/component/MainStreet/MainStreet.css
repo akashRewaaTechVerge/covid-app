@@ -29,18 +29,21 @@
 }
 
 
+
 .main_street-contact_info {
 	padding: 67px 70px;
 	border-radius: 10px 0 0 10px;
 	height: 100%;
-	background-color: #000;
+	background-color: #cad8dd;
 	/* background: url('../../images/dark.png'); */
-	color: #c3120e;
+	color: darkblue;
+	font-size: 25px;
 
 }
 
 .main-street-sub-title.white {
-	color: #c3120e;
+	/* color: #c3120e; */
+	text-align: center;
 	padding-left: 0;
 	margin-top: 0;
 	margin: 0;
@@ -198,4 +201,21 @@ select {
 .social-links.without-bg li a {
 	display: inline-block;
 	font-size: 22px;
+}
+
+h1.titleHome {
+    font-size: 45px;
+	text-align: center;
+}
+h1.location {
+    font-size: 45px;
+	/* text-align: center; */
+}
+
+h2.appoimentTitle {
+    margin-bottom: -44px;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 25px;
+    color: darkblue;
 }

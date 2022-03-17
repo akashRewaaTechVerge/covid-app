@@ -5,18 +5,38 @@ import { FaClock, FaLocationArrow } from 'react-icons/fa'
 import { HiMail} from 'react-icons/hi'
 import {IoMdCall} from 'react-icons/io'
 import submit from '../../images/submit.png'
+import corona from '../../images/corona2.jpg'
 import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import Pager from '../Pager/Pager'
+import illunois from '../../images/illunois.jpg'
+
 const WarrenAve = () => {
     return (
         <div>
-            <Pager pageTitle="Hillside" isBlue={true} bigTitle="FREE PCR &#38; RAPID COVID-19 TESTING " isRed={true} imgBanner={contactImg} height="600px" left="20%" />
+            <Pager pageTitle="Illinois" isBlue={true} bigTitle="FREE PCR &#38; RAPID COVID-19 TESTING " isRed={true} imgBanner={contactImg} height="600px" left="20%" />
             <section className="page-content">
                 <div className="container">
                     <div className="contact-page">
                         <div className="contact-head-warrenave">
-                        <p>Get Tested Safely For Free Today</p>
-                        <div className='main-title'>Are you looking to ensure the health and safely of  <br /> you and everyone around you?</div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <img src={illunois} alt="Image Not Found" />
+                                </div>
+                                <div class="col locillunois">
+                                    <h2>Location</h2><br></br> 
+                                    {/* <div>
+                                        <p> 4003 Warren Ave. </p> <br></br>
+                                        <p> Hillside, IL 60162. </p> <br></br><br></br>
+                                        <p> Gogi Patel - 630-903-4866. </p> <br></br>
+                                        <p> Ravi Patel - 630-440-0736. </p> <br></br>
+                                        <p> FreeCovidTestsForYou@gmail.com. </p>
+                                    </div>   */}
+                                </div>
+                            </div>
+                        </div>    
+                        {/* <p>Get Tested Safely For Free Today</p>
+                        <div className='main-title'>Are you looking to ensure the health and safely of  <br /> you and everyone around you?</div> */}
                         
                         </div>
                         {/* <!--contact-head end--> */}

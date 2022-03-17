@@ -206,7 +206,7 @@ img.col.image2 {
 }
 .card-text:last-child {
  
-    margin-left: 29%;
+    /* margin-left: 29%; */
   
 }
 .page-content {
@@ -214,5 +214,13 @@ img.col.image2 {
     /* background: black; */
 }
 h5.card-title {
-    margin-left: 29%;
+    /* margin-left: -10%; */
+}
+.map-corolina {
+    position: relative;
+    left: -23%;
+    width: 146%;
+    height: 94%;
+    /* right: 20%; */
+    margin-top: -15%;
 }

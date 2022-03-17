@@ -361,10 +361,11 @@ background: salmon;
 }    
 h5.card-title {
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
     color: initial;
     margin-bottom: 26px;
     margin-top: 17px;
+    margin-left: -8%;
     line-height: 0.55;
 
 }
@@ -378,6 +379,7 @@ section.cowin-services {
     margin-left: 42px;
     font-size: 15px;
     font-style: normal;
+    margin-left: 3%;
 }
 
 .card-icon.text-center {

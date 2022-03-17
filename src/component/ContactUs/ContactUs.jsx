@@ -9,7 +9,7 @@ import call from '../../images/ci4.png'
 import image1 from '../../images/image1.jpeg'
 import image2 from '../../images/image2.jpeg'
 import submit from '../../images/submit.png'
-
+import MapContainer from '../Map/Maps'
 import { useState } from 'react';
 
 import axios from 'axios'
@@ -58,7 +58,7 @@ const ContactUs = () => {
     }
     return (
         <div>
-            <Pager pageTitle="Contact" bigTitle="Contact" imgBanner={contactImg} left={'25%'} />
+            <Pager pageTitle="SouthCarolina" bigTitle="SouthCarolina" imgBanner={contactImg} left={'25%'} />
             <section className="page-content">
                 <div className="container">
                     <div className="contact-page">
@@ -169,32 +169,9 @@ const ContactUs = () => {
                                 <div className="col-lg-4">
                                     <div className="contact_info">
                                         <h3 className="sub-title white">Maps</h3>
-                                        <ul className="cl-list">
-                                            <li>
-                                                <span className="ci-icon">
-                                                    <img src={map} alt="" />
-                                                </span>
-                                                <p>1556 Broadway, suite 416 New York, NY 10120 USA</p>
-                                            </li>
-                                            <li>
-                                                <span className="ci-icon">
-                                                    <img src={time} alt="" />
-                                                </span>
-                                                <p><span>Mon-Sat:</span> 9 am til 6 pm <span>Sunday:</span> Closed</p>
-                                            </li>
-                                            <li>
-                                                <span className="ci-icon">
-                                                    <img src={mail} alt="" />
-                                                </span>
-                                                <p>in.design@gmail.com</p>
-                                            </li>
-                                            <li>
-                                                <span className="ci-icon">
-                                                    <img src={call} alt="" />
-                                                </span>
-                                                <p>+44 20 7722 0088</p>
-                                            </li>
-                                        </ul>
+                                        <div className='map-corolina'>
+                                            <MapContainer lat="" lng="" google="google" />
+                                        </div>
                                     </div>
                                 </div>
                             </div> 

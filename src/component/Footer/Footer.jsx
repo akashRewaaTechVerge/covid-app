@@ -5,10 +5,10 @@ import dose from '../../images/dose.png'
 import Lottie from 'react-lottie'
 import footerAnim from '../../animation/footer.json'
 import { Link } from 'react-router-dom'
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
+import MapContainer from '../Map/Maps'
 const Footer = (props) => {
 	
-	const pos = { lat: 43.319740, lng: -76.408730 }
+	//const pos = { lat: 43.319740, lng: -76.408730 }
 	const defaultOpt = {
 		loop: true,
 		autoplay: true,
@@ -40,11 +40,7 @@ const Footer = (props) => {
 
 						
 							<div className='map-display'>
-								<Map google={props.google} center={
-									pos
-								} zoom={15}   >
-									<Marker position={pos} />
-								</Map>
+							<MapContainer lat="" lng="" google="google" />
 							</div>
 							<div class=" p-2">
 								<div class="widget widget-info">
@@ -95,6 +91,4 @@ const Footer = (props) => {
 	)
 }
 
-export default GoogleApiWrapper({
-	apiKey: "AIzaSyAb-fX2IV_idE2Iwba-2aktnyjO3I3CImo",
-})(Footer)
+export default (Footer)
